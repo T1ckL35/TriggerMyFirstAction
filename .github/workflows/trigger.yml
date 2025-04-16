@@ -34,7 +34,7 @@ jobs:
           repo_owner="T1ckL35" 
           repo_name="MyFirstAction"  
           event_type="trigger-workflow" 
-          module=${{ github.event.inputs.target_module }}"
+          module="${{ github.event.inputs.target_module }}"
           version="${{ github.event.inputs.target_version }}"
   
           curl -L \
