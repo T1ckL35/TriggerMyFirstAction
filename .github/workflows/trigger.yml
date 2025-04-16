@@ -26,8 +26,8 @@ jobs:
           module="${{ github.event.inputs.target_module }}"
           version="${{ github.event.inputs.target_version }}"
 
-          # Have set a Personal Access Token up (30 day expiry) with Read/Write access to Actions on this and the FirstAction repository.
-          # Added the value to a repository secret in this repo called pat_trigger_tests to use below
+          # Have set a Personal Access Token up (30 day expiry) with Read/Write access to Actions on this ("Contents" repository permissions (write)) and the FirstAction repository.
+          # Added the value to a repository secret in this repo called PAT_TRIGGER_TESTS to use below
           curl -L \
             -X POST \
             -H "Accept: application/vnd.github+json" \
